@@ -27,9 +27,9 @@ node index.js
 
 Rode os dois projetos: api e frontend.
 
-Dica: abra 2 browsers e coloque um ao lado do outro.
+Dica: abra 2 navegadores e coloque um ao lado do outro.
 
-No segundo browser, acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
+No segundo navegador, acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
 
 ```js
 // Objeto original
@@ -40,9 +40,9 @@ users: [
 ],
 ```
 
-Agora, no primeiro browser, acesse o endpoint da api: http://localhost:3000/send
+Agora, no primeiro navegador, acesse o endpoint da api: http://localhost:3000/send
 
-Observe na tela 1 do frontend, que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
+Observe na tela 2 (dois) do frontend, que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
 
 ```js
 // Objeto modificado no front, quando o endpoint http://localhost:3000/send acessado
