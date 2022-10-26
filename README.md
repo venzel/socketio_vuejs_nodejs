@@ -7,6 +7,17 @@
 - Middleware para barrar uma comunicação inválida
 - Criação de uma biblioteca com padrão de projeto observer
 
+## Bibliotecas utilizadas
+
+### Frontend
+
+- jsonwebtoken ^8.5.1
+- socket.io-client ^4.1.2
+
+### Backend
+
+- socket.io ^0.2.0
+
 ## Rodar o VueJs
 
 ```bash
