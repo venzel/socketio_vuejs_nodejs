@@ -23,16 +23,13 @@ cd api-node
 node index.js
 ```
 
-## Procediento
+## Como observar a interação entre a Api e o Frontend
 
-Rode os dois projetos acesse o endpoint:
+Rode os dois projetos (api e frontend).
 
-```
-http://localhost:3000/send
+Dica: coloque as duas telas, uma ao lado da outra para observar os eventos.
 
-```
-
-Acesse o front end: http://localhost:8080 e observe o objeto original
+Acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
 
 ```js
 // Objeto original
@@ -45,7 +42,7 @@ users: [
 
 Agora acesse o path do frontend: http://localhost:8080/send
 
-Observe que o segundo objeto foi alterado, status: true
+Observe que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
 
 ```js
 // Objeto original
