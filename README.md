@@ -29,6 +29,8 @@ Rode os dois projetos: api e frontend.
 
 Dica: abra 2 navegadores e coloque um ao lado do outro.
 
+<img src="./media/socketio.png" />
+
 No segundo navegador, acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
 
 ```js
