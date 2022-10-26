@@ -25,11 +25,11 @@ node index.js
 
 ## Como observar a interação entre a Api e o Frontend
 
-Rode os dois projetos (api e frontend).
+Rode os dois projetos: api e frontend.
 
-Dica: coloque as duas telas, uma ao lado da outra para observar os eventos.
+Dica: abra 2 browsers e coloque um ao lado do outro.
 
-Acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
+No primeiro browser, acesse o frontend: http://localhost:8080 e observe o estado original do objeto:
 
 ```js
 // Objeto original
@@ -40,9 +40,9 @@ users: [
 ],
 ```
 
-Agora acesse o path do frontend: http://localhost:8080/send
+Agora, no segundo browser, acesse o endpoint da api: http://localhost:3000/send
 
-Observe que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
+Observe na tela 1 do frontend, que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
 
 ```js
 // Objeto original
