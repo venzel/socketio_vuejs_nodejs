@@ -28,7 +28,15 @@
 -   @nestjs/jwt ^9.0.0
 -   passport-jwt ^4.0.0
 
-## Rodar o VueJs
+## Como clonar e rodar o projeto
+
+## Clonar o repositório
+
+```bash
+git clone https://github.com/venzel/socketio_vuejs_nodejs.git
+```
+
+### Rodar o frontend VueJs
 
 ```bash
 cd frontend-vue
@@ -36,7 +44,7 @@ cd frontend-vue
 yarn serve
 ```
 
-## Rodar a API do NodeJs
+### Rodar a API do NodeJs
 
 ```bash
 cd api-node
@@ -44,7 +52,7 @@ cd api-node
 node index.js
 ```
 
-## Rodar a API do NestJs
+### Rodar a API do NestJs
 
 ```bash
 cd api-nest
@@ -52,7 +60,7 @@ cd api-nest
 yarn start:dev
 ```
 
-## Como observar a interação entre a Api e o Frontend
+## Como observar a interação entre a API e o Frontend
 
 Rode os dois projetos: api e frontend.
 
