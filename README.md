@@ -30,7 +30,7 @@
 
 ## Como clonar e rodar o projeto
 
-## Clonar o repositório
+### Clonar o repositório
 
 ```bash
 git clone https://github.com/venzel/socketio_vuejs_nodejs.git
