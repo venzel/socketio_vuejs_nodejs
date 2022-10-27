@@ -2,21 +2,31 @@
 
 ## Recursos utilizados
 
-- Socket.io
-- JWT para validação da comunicação
-- Middleware para barrar uma comunicação inválida
-- Criação de uma biblioteca com padrão de projeto observer
+-   Socket.io
+-   Node/Express & NestJs
+-   JWT para validação da comunicação
+-   Middleware para barrar uma comunicação inválida
+-   Criação de uma biblioteca com padrão de projeto observer
 
 ## Bibliotecas utilizadas
 
-### Frontend
+### Frontend/VueJs
 
-- jsonwebtoken ^8.5.1
-- socket.io-client ^4.1.2
+-   jsonwebtoken ^8.5.1
+-   socket.io-client ^4.1.2
 
-### Backend
+### Api/NodeJs
 
-- socket.io ^0.2.0
+-   socket.io ^0.2.0
+-   jsonwebtoken ^8.5.1
+
+### Api/NestJs
+
+-   platform-express ^9.0.0
+-   @nestjs/websockets ^9.1.6
+-   @nestjs/websockets ^9.1.6
+-   @nestjs/jwt ^9.0.0
+-   passport-jwt ^4.0.0
 
 ## Rodar o VueJs
 
@@ -32,6 +42,14 @@ yarn serve
 cd api-node
 
 node index.js
+```
+
+## Rodar a API do NestJs
+
+```bash
+cd api-nest
+
+yarn start:dev
 ```
 
 ## Como observar a interação entre a Api e o Frontend
@@ -53,12 +71,12 @@ users: [
 ],
 ```
 
-Agora, no primeiro navegador, acesse o endpoint da api: http://localhost:3000/send
+Agora, no primeiro navegador, acesse o endpoint da api: http://localhost:3000/users
 
 Observe na tela 2 (dois) do frontend, que o segundo objeto foi alterado: { id: 200, name: 'Cíntia', status: true }
 
 ```js
-// Objeto modificado no front, quando o endpoint http://localhost:3000/send acessado
+// Objeto modificado no front, quando o endpoint http://localhost:3000/users acessado
 users: [
     { id: 100, name: 'Tiago', status: false },
     { id: 200, name: 'Cíntia', status: true },

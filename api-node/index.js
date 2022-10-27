@@ -16,11 +16,11 @@ io.use((socket, next) => {
     console.log(token);
 
     try {
-        const user = jwt.verify(token, JWT_SECRET);
+        const { data } = jwt.verify(token, JWT_SECRET);
 
-        console.log('user', user);
+        console.log('data', data);
 
-        socket.user = user;
+        socket.data = data;
 
         next();
     } catch (e) {
@@ -42,8 +42,8 @@ io.on('connection', (socket) => {
     });
 });
 
-app.get('/send', (req, res) => {
-    io.emit('updateUser', {
+app.get('/users', (_, res) => {
+    io.emit('changeStatus', {
         id: 200,
     });
 

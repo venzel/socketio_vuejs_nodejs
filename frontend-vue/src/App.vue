@@ -28,21 +28,23 @@ export default {
     async created() {
         SocketioService.setup(this.generateToken());
 
-        SocketioService.subscribe('updateUser', (data) => {
-            this.setStatus(data);
+        SocketioService.subscribe('changeStatus', (data) => {
+            this.changeUserStatus(data);
         });
 
-        SocketioService.listen('updateUser');
+        SocketioService.listen('changeStatus');
     },
     methods: {
         generateToken() {
             try {
-                const data = {
-                    id: 200,
-                    name: 'Cíntia',
+                const payload = {
+                    data: {
+                        id: 200,
+                        name: 'Cíntia',
+                    },
                 };
 
-                const token = jwt.sign(data, process.env.VUE_APP_SECRET, {
+                const token = jwt.sign(payload, process.env.VUE_APP_SECRET, {
                     expiresIn: 60 * 60,
                 });
 
@@ -53,11 +55,13 @@ export default {
                 return null;
             }
         },
-        setStatus(data) {
+        changeUserStatus(data) {
             const index = this.users.findIndex((e) => e.id === data.id);
 
             if (index !== -1) {
                 this.users[index].status = !this.users[index].status;
+
+                console.log(`User id ${this.users[index].id} changed!`);
             }
         },
     },
