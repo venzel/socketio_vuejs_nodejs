@@ -1,4 +1,10 @@
-# Socketio com VueJs
+# Sockets com VueJs, NodeJs e NestJs
+
+## 👤 Autor
+
+| Foto                                       | Nome                                        | Ativo | Atribuições                   |
+| ------------------------------------------ | ------------------------------------------- | ----- | ----------------------------- |
+| ![Enéas Almeida](./media/venzel-thumb.png) | [Enéas Almeida](https://github.com/venzel/) | 🔥    | Manager, Arquiteto, FullStack |
 
 ## Recursos utilizados
 
